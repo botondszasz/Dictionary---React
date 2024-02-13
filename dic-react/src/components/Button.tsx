@@ -3,12 +3,12 @@ interface Props {
   onClick: () => void;
 }
 
-const Button = ({ children, onClick }: Props) => {
+function Button({ children, onClick }: Props) {
   return (
     <button className="btn btn-outline-success" onClick={onClick}>
       {children}
     </button>
   );
-};
+}
 
 export default Button;
