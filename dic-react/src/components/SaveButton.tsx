@@ -1,14 +1,13 @@
 interface Props {
-  children: string;
   onClick: () => void;
 }
 
-function Button({ children, onClick }: Props) {
+function SaveButton({ onClick }: Props) {
   return (
     <button className="btn btn-outline-success" onClick={onClick}>
-      {children}
+      Save
     </button>
   );
 }
 
-export default Button;
+export default SaveButton;
